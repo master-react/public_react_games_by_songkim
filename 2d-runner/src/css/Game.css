@@ -1,0 +1,19 @@
+@import "./Board.css";
+@import "./Character.css";
+@import "./Obstacle.css";
+
+#game-start-button {
+  overflow: hidden;
+  width: 153px;
+  height: 45px;
+  background-color: #61dafb;
+  color: #fff;
+  padding: 10px 13px;
+  font-size: 18px;
+  line-height: 1.333333;
+  border-radius: 15px;
+}
+
+#game-start-button:hover {
+  background-color: #61daab;
+}

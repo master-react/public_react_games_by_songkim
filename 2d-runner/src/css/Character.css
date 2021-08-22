@@ -1,0 +1,55 @@
+#game-character {
+  width: 30px;
+  height: 60px;
+  background-image: url("../static/images/person/running1.png");
+  position: relative;
+  top: 140px;
+}
+
+#game-character.jumping {
+  animation: jump 0.3s linear;
+}
+@keyframes jump {
+  0% {
+    top: 130px;
+  }
+  30% {
+    top: 80px;
+  }
+  70% {
+    top: 80px;
+  }
+  100% {
+    top: 130px;
+  }
+}
+
+#game-character.running {
+  animation: run 0.5s infinite;
+}
+@keyframes run {
+  0% {
+    background-image: url("../static/images/person/running1.png");
+  }
+  12% {
+    background-image: url("../static/images/person/running2.png");
+  }
+  24% {
+    background-image: url("../static/images/person/running3.png");
+  }
+  36% {
+    background-image: url("../static/images/person/running4.png");
+  }
+  48% {
+    background-image: url("../static/images/person/running5.png");
+  }
+  70% {
+    background-image: url("../static/images/person/running6.png");
+  }
+  82% {
+    background-image: url("../static/images/person/running7.png");
+  }
+  100% {
+    background-image: url("../static/images/person/running1.png");
+  }
+}

@@ -1,0 +1,36 @@
+#game-obstacle {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  top: 115px;
+  left: 500px;
+}
+
+#game-obstacle.animate {
+  animation: game-obstacle-move-left 1s infinite linear;
+}
+
+#game-obstacle .image {
+  width: 25px;
+  height: 25px;
+  background-image: url("../static/images/fire/logo.svg");
+  background-size: contain;
+  animation: game-obstacle-rotate 1s infinite linear;
+}
+
+@keyframes game-obstacle-move-left {
+  0% {
+    left: 500px;
+  }
+  100% {
+    left: -20px;
+  }
+}
+@keyframes game-obstacle-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
